@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ShowFIlesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_card_background"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="My Files"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tv_view_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="28dp"
+                android:text="View All"
+                android:textAlignment="textEnd"
+                android:textColor="#4d59f2"
+                android:textSize="18dp"></TextView>
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFileList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C85F71F2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="visible">
+
+
+            <Button
+                android:id="@+id/btnDestails"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/details" />
+
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/delete" />
+
+            <Button
+                android:id="@+id/btnRename"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/rename" />
+
+
+            <Button
+                android:id="@+id/btnCancelSelection"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/cancel" />
+
+            <Button
+                android:id="@+id/btnCopy"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/copy"
+                android:onClick="onCopyButtonClick" />
+
+
+            <Button
+                android:id="@+id/btnPaste"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/paste"
+                android:onClick="onPasteButtonClick" />
+
+
+            <Button
+                android:id="@+id/btnMove"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/move" />
+
+            <Button
+                android:id="@+id/btnSelectALl"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/selectall" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
